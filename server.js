@@ -781,10 +781,7 @@ io.on("connection", (socket) => {
 
 // ─── 8) MONGODB CONNECT & SERVER START ────────────────────────────────────────
 mongoose
-  .connect("mongodb+srv://abshr:abshr@abshr.fxznc.mongodb.net/Bcare5", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect("mongodb+srv://abshr:abshr@abshr.fxznc.mongodb.net/Bcare5",)
   .then(async (conn) => {
     console.log("✅ MongoDB connected");
     const port = process.env.PORT || 8080;
